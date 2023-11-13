@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <g data-name="그룹 358" transform="translate(-1576 -592)">
+        <rect data-name="사각형 119" width="64" height="64" rx="17" transform="translate(1576 592)" style="fill:#2c2c2c"/>
+        <g data-name="그룹 301">
+            <path data-name="패스 213" d="M1835.644 720.887a9.891 9.891 0 0 1 3.987-7.977 1.759 1.759 0 1 0-2.113-2.812 13.487 13.487 0 0 0 0 21.575 1.759 1.759 0 1 0 2.113-2.812 9.886 9.886 0 0 1-3.987-7.974z" transform="translate(-240.187 -96.886)" style="fill:#c4c4c4"/>
+            <path data-name="패스 214" d="M1842.943 710.1a1.759 1.759 0 0 0-2.113 2.812 9.971 9.971 0 0 1 0 15.953 1.759 1.759 0 0 0 2.115 2.812 13.489 13.489 0 0 0 0-21.577z" transform="translate(-223.372 -96.886)" style="fill:#c4c4c4"/>
+            <path data-name="패스 215" d="M1832.644 723.907a16.933 16.933 0 0 1 6.377-13.275 1.759 1.759 0 1 0-2.2-2.747 20.523 20.523 0 0 0 0 32.04 1.759 1.759 0 1 0 2.2-2.746 16.926 16.926 0 0 1-6.377-13.272z" transform="translate(-244.223 -99.907)" style="fill:#c4c4c4"/>
+            <path data-name="패스 216" d="M1844.985 707.887a1.759 1.759 0 1 0-2.2 2.746 17 17 0 0 1 0 26.547 1.759 1.759 0 1 0 2.2 2.746 20.523 20.523 0 0 0 0-32.04z" transform="translate(-220.68 -99.907)" style="fill:#c4c4c4"/>
+            <text data-name="?" transform="translate(1608 633.447)" style="font-size:25px;font-family:DINAlternate-Bold,DIN Alternate;font-weight:700;fill:#c4c4c4"><tspan x="-5.786" y="0">?</tspan></text>
+        </g>
+    </g>
+</svg>
