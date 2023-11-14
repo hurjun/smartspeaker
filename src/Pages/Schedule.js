@@ -1,16 +1,13 @@
 import styled from 'styled-components';
-import Patient from './Patient.js';
+import Patient from './Patient.jsx';
 
 function Schedule() {
   return (
     <Container>
       <SelectBar>
-        <Select></Select>
-        <Select>
-          <option>환자 선택</option>
-          <Patient />
-        </Select>
-        <Select></Select>
+        <Patient />
+        <Patient />
+        <Patient />
         <AddBtn>추가</AddBtn>
       </SelectBar>
     </Container>
@@ -36,16 +33,9 @@ const SelectBar = styled.div`
   margin: 10px;
 `;
 
-const Select = styled.select`
-  background-color: white;
-  border: solid 1px blue;
-  margin-left: 10px;
-  width: 100px;
-  font-size: 14px;
-`;
-
 const AddBtn = styled.button`
-  width: 60px;
+  width: 40px;
+  font-size: 14px;
   border: solid 1px black;
 `;
 
