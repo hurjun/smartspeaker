@@ -17,18 +17,17 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
 const Container = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: 150px 900px;
   color: #707070;
   height: 100vh;
 `;
 
 const Main = styled.div`
   display: grid;
+  grid-column: span 1;
   grid-template-rows: 4fr 7fr;
-  flex-direction: column;
-  background-color: tomato;
-  width: 100vw;
-  height: 100vh;
+  padding: 20px;
 `;
 
 type TLoginStore = {
@@ -55,7 +54,7 @@ function Router() {
         {/* <ReactQueryDevtools /> */}
         <Main>
           <Routes>
-            <Route path="/1" element={<Schedule />} />
+            <Route path="/" element={<Schedule />} />
             <Route path="/2" element={<RouteTest />} />
             <Route path="/3" element={<RouteTest />} />
           </Routes>

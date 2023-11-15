@@ -45,7 +45,6 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 20%;
   background-color: white;
   border-right: 2px solid blue;
   padding-top: 30px;
@@ -55,8 +54,8 @@ const Content = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 80px;
+  width: 100px;
+  height: 50px;
   margin: 20px 20px;
   background-color: white;
   &:active {
@@ -65,7 +64,7 @@ const Content = styled.div`
   }
   border-top: 2px solid blue;
   border-bottom: 2px solid blue;
-  font-size: 24px;
+  font-size: 18px;
 `;
 
 export default MenuBar;
