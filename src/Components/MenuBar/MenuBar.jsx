@@ -9,11 +9,11 @@ function MenuBar() {
     switch (kind) {
       case 'schedule':
         console.log('this is 스케줄 페이지');
-        navigator('/1');
+        navigator('/');
         break;
       case 'dialogue':
         console.log('this is 대화내역 페이지');
-        navigator('/2');
+        navigator('/dialogue');
         break;
       case 'info':
         console.log('this is 정보추가 페이지');

@@ -16,6 +16,7 @@ import Schedule from './Pages/Schedule';
 
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import Dialogue from './Pages/Dialogue';
 
 const Container = styled.div`
   display: grid;
@@ -56,7 +57,7 @@ function Router() {
         <Main>
           <Routes>
             <Route path="/" element={<Schedule />} />
-            <Route path="/2" element={<RouteTest />} />
+            <Route path="/dialogue" element={<Dialogue />} />
             <Route path="/3" element={<RouteTest />} />
             <Route path="/4" element={<RouteTest2 />} />
           </Routes>
