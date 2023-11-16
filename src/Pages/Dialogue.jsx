@@ -16,18 +16,9 @@ function Dialogue() {
     setPatient(e.target.value);
   };
 
-  // useEffect(()=> {
-  //   patientChange
-  // },[patient]);
-
   const searchBtnClick = () => {
-    console.log(`${patient} search!`);
     setTarget(patient);
   };
-
-  // useEffect(()=> {
-  //   searchBtnClick;
-  // }, [target]);
 
   return (
     <>

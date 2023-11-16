@@ -63,7 +63,6 @@ function PatientData({ dataArr, searchTarget }) {
   // 데이터 보여주는 함수
   // 모드가 true일땐 대화내역, false일땐 스케줄페이지로 동작
   function displayList(array) {
-    console.log(array);
     return array.map((eachArr, index) => (
       <Mylist id={index} key={index}>
         <Data key={eachArr[0]}>{eachArr[0]}</Data>

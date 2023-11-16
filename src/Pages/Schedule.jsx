@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 import PatientData from './PatientData.jsx';
 
 function Schedule() {
+  const patientDefaultValue = '환자 선택';
+  const questionDefaultValue = '질문 선택';
+
   const patientArr = [
     { name: '허 준', place: 101 },
     { name: '최효재', place: 102 },
@@ -50,10 +53,14 @@ function Schedule() {
   };
 
   const addBtnClick = () => {
-    setData([time, patient, question]);
-    setPatient('환자 선택');
-    setQuestion('질문 선택');
-    setTime(currentTime);
+    if (patient !== patientDefaultValue && question !== questionDefaultValue) {
+      setData([time, patient, question]);
+      setPatient('환자 선택');
+      setQuestion('질문 선택');
+      setTime(currentTime);
+    } else {
+      alert('모든 정보를 입력하세요.');
+    }
   };
 
   return (
