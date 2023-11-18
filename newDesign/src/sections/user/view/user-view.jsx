@@ -21,6 +21,7 @@ import UserTableHead from '../user-table-head';
 import TableEmptyRows from '../table-empty-rows';
 import UserTableToolbar from '../user-table-toolbar';
 import { emptyRows, applyFilter, getComparator } from '../utils';
+import Schedule from '../../../components/select';
 
 // ----------------------------------------------------------------------
 
@@ -100,11 +101,13 @@ export default function UserPage() {
         <Typography variant="h4">환자에게 질문하기</Typography>
 
         <Button variant="contained" color="inherit" startIcon={<Iconify icon="eva:plus-fill" />}>
-          New User
+          환자 추가하기
         </Button>
       </Stack>
 
       <Card>
+        <Schedule></Schedule>
+
         <UserTableToolbar
           numSelected={selected.length}
           filterName={filterName}

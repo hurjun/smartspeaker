@@ -13,7 +13,7 @@ const navConfig = [
   //   icon: icon('ic_analytics'),
   // },
   {
-    title: '스케줄 설정',
+    title: '질문 설정',
     path: '/user',
     icon: icon('ic_user'),
   },

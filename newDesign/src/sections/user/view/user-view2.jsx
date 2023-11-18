@@ -97,7 +97,7 @@ export default function UserPage2() {
   return (
     <Container>
       <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
-        <Typography variant="h4">History</Typography>
+        <Typography variant="h4">환자 답변 내역</Typography>
 
         <Button variant="contained" color="inherit" startIcon={<Iconify icon="eva:plus-fill" />}>
           New User
