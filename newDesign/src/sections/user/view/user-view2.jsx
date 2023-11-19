@@ -1,26 +1,25 @@
-import { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Card from '@mui/material/Card';
 import Stack from '@mui/material/Stack';
 import Table from '@mui/material/Table';
-import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import TableBody from '@mui/material/TableBody';
 import Typography from '@mui/material/Typography';
 import TableContainer from '@mui/material/TableContainer';
 import TablePagination from '@mui/material/TablePagination';
+import avatarUrl from '../../../../public/assets/images/avatars/avatar_7.jpg'
 
 import { users } from 'src/_mock/user';
 
-import Iconify from 'src/components/iconify';
 import Scrollbar from 'src/components/scrollbar';
-
 import TableNoData from '../table-no-data';
 import UserTableRow from '../user-table-row';
 import UserTableHead from '../user-table-head';
 import TableEmptyRows from '../table-empty-rows';
 import UserTableToolbar from '../user-table-toolbar';
 import { emptyRows, applyFilter, getComparator } from '../utils';
+import { useSpeechRecognition } from 'react-speech-kit';
 
 // ----------------------------------------------------------------------
 
@@ -36,6 +35,14 @@ export default function UserPage2() {
   const [filterName, setFilterName] = useState('');
 
   const [rowsPerPage, setRowsPerPage] = useState(5);
+  const [value, setValue] = useState('');
+  const { listen, listening, stop } = useSpeechRecognition({
+    onResult: (result) => {
+      // 음성인식 결과가 value 상태값으로 할당됩니다.
+      setValue(result);
+    },
+  });
+
 
   const handleSort = (event, id) => {
     const isAsc = orderBy === id && order === 'asc';
@@ -99,9 +106,9 @@ export default function UserPage2() {
       <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
         <Typography variant="h4">환자 답변 내역</Typography>
 
-        <Button variant="contained" color="inherit" startIcon={<Iconify icon="eva:plus-fill" />}>
-          New User
-        </Button>
+        {/*<Button variant="contained" color="inherit" startIcon={<Iconify icon="eva:plus-fill" />}>*/}
+        {/*  New User*/}
+        {/*</Button>*/}
       </Stack>
 
       <Card>
@@ -110,6 +117,9 @@ export default function UserPage2() {
           filterName={filterName}
           onFilterName={handleFilterByName}
         />
+        <div onMouseEnter={() => listen()} onMouseLeave={stop}>
+          🎤
+        </div>
 
         <Scrollbar>
           <TableContainer sx={{ overflow: 'unset' }}>
@@ -131,6 +141,15 @@ export default function UserPage2() {
                 ]}
               />
               <TableBody>
+                <UserTableRow
+                  key={''}
+                  name={'허 준'}
+                  role={'아프신 곳은 없으신가요?'}
+                  status={value}
+                  company={'11월 24일 11시 30분'}
+                  avatarUrl={avatarUrl}
+                  selected={7}
+                />
                 {dataFiltered
                   .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
                   .map((row) => (
