@@ -23,8 +23,8 @@ const navConfig = [
     icon: icon('ic_blog'),
   },
   {
-    title: '정보 추가',
-    path: '/products',
+    title: '병원 정보',
+    path: '/',
     icon: icon('ic_cart'),
   }
 
