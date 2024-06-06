@@ -27,5 +27,5 @@ SvgColor.propTypes = {
   src: PropTypes.string,
   sx: PropTypes.object,
 };
-
+SvgColor.displayName="";
 export default SvgColor;

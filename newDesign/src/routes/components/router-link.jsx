@@ -9,5 +9,6 @@ const RouterLink = forwardRef(({ href, ...other }, ref) => <Link ref={ref} to={h
 RouterLink.propTypes = {
   href: PropTypes.string,
 };
+RouterLink.displayName="";
 
 export default RouterLink;

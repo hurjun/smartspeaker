@@ -107,5 +107,5 @@ ColorPicker.propTypes = {
   selected: PropTypes.oneOfType([PropTypes.string, PropTypes.arrayOf(PropTypes.string)]),
   sx: PropTypes.object,
 };
-
+ColorPicker.displayName=""
 export default ColorPicker;

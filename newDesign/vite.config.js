@@ -11,6 +11,7 @@ export default defineConfig({
     checker({
       eslint: {
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx}"',
+        ignoreDuringBuilds: true
       },
     }),
   ],

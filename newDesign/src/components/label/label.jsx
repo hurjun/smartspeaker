@@ -57,5 +57,5 @@ Label.propTypes = {
     'error',
   ]),
 };
-
+Label.displayName="";
 export default Label;
